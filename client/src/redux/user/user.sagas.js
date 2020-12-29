@@ -11,7 +11,12 @@ import {
     signUpSuccess
 } from './user.actions';
 
-import {auth, createUserProfileDocument, getCurrentUser, googleProvider} from '../../firebase/firebase.utils';
+import {
+    auth,
+    createUserProfileDocument,
+    getCurrentUser,
+    googleProvider
+} from '../../firebase/firebase.utils';
 
 export function* getSnapshotFromUserAuth(userAuth, additionalData) {
     try {
